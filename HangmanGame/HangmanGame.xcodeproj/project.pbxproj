@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		55CC54952A239B4000F65E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54942A239B4000F65E6B /* AppDelegate.swift */; };
 		55CC54972A239B4000F65E6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54962A239B4000F65E6B /* SceneDelegate.swift */; };
-		55CC54992A239B4000F65E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54982A239B4000F65E6B /* ViewController.swift */; };
+		55CC54992A239B4000F65E6B /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54982A239B4000F65E6B /* GreetingViewController.swift */; };
 		55CC549C2A239B4000F65E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CC549A2A239B4000F65E6B /* Main.storyboard */; };
 		55CC549E2A239B4200F65E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CC549D2A239B4200F65E6B /* Assets.xcassets */; };
 		55CC54A12A239B4200F65E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CC549F2A239B4200F65E6B /* LaunchScreen.storyboard */; };
+		55CC54AC2A23A76F00F65E6B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54AB2A23A76F00F65E6B /* MenuViewController.swift */; };
+		55CC54AE2A23A78D00F65E6B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54AD2A23A78D00F65E6B /* GameViewController.swift */; };
+		55CC54B02A23A7B200F65E6B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54AF2A23A7B200F65E6B /* SettingsViewController.swift */; };
+		55CC54B22A23A7D000F65E6B /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC54B12A23A7D000F65E6B /* StatisticViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55CC54912A239B4000F65E6B /* HangmanGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangmanGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CC54942A239B4000F65E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CC54962A239B4000F65E6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55CC54982A239B4000F65E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55CC54982A239B4000F65E6B /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		55CC549B2A239B4000F65E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55CC549D2A239B4200F65E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55CC54A02A239B4200F65E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55CC54A22A239B4200F65E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55CC54AB2A23A76F00F65E6B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		55CC54AD2A23A78D00F65E6B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		55CC54AF2A23A7B200F65E6B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		55CC54B12A23A7D000F65E6B /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		55CC54932A239B4000F65E6B /* HangmanGame */ = {
 			isa = PBXGroup;
 			children = (
+				55CC54AA2A23A6B400F65E6B /* Model */,
+				55CC54A82A23A69900F65E6B /* View */,
+				55CC54A92A23A6AA00F65E6B /* Controller */,
 				55CC54942A239B4000F65E6B /* AppDelegate.swift */,
 				55CC54962A239B4000F65E6B /* SceneDelegate.swift */,
-				55CC54982A239B4000F65E6B /* ViewController.swift */,
 				55CC549A2A239B4000F65E6B /* Main.storyboard */,
 				55CC549D2A239B4200F65E6B /* Assets.xcassets */,
 				55CC549F2A239B4200F65E6B /* LaunchScreen.storyboard */,
 				55CC54A22A239B4200F65E6B /* Info.plist */,
 			);
 			path = HangmanGame;
+			sourceTree = "<group>";
+		};
+		55CC54A82A23A69900F65E6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55CC54A92A23A6AA00F65E6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55CC54982A239B4000F65E6B /* GreetingViewController.swift */,
+				55CC54AB2A23A76F00F65E6B /* MenuViewController.swift */,
+				55CC54AD2A23A78D00F65E6B /* GameViewController.swift */,
+				55CC54AF2A23A7B200F65E6B /* SettingsViewController.swift */,
+				55CC54B12A23A7D000F65E6B /* StatisticViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55CC54AA2A23A6B400F65E6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55CC54992A239B4000F65E6B /* ViewController.swift in Sources */,
+				55CC54AE2A23A78D00F65E6B /* GameViewController.swift in Sources */,
+				55CC54B22A23A7D000F65E6B /* StatisticViewController.swift in Sources */,
+				55CC54992A239B4000F65E6B /* GreetingViewController.swift in Sources */,
 				55CC54952A239B4000F65E6B /* AppDelegate.swift in Sources */,
 				55CC54972A239B4000F65E6B /* SceneDelegate.swift in Sources */,
+				55CC54AC2A23A76F00F65E6B /* MenuViewController.swift in Sources */,
+				55CC54B02A23A7B200F65E6B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
