@@ -9,21 +9,19 @@ import UIKit
 
 class GameViewController: UIViewController {
 
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var wordCompletion: UILabel!
+    @IBOutlet weak var tries: UILabel!
+    @IBOutlet weak var message: UILabel!
+    
+    @IBOutlet weak var textfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func didCheck(_ sender: Any) {
     }
-    */
-
 }
