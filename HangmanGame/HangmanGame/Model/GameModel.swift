@@ -15,7 +15,7 @@ class Game {
     
     var chosenWord: String = "moon"
     
-    var word_completion: String = "_________"
+    var wordCompletion: String = "_________"
     
     
     
@@ -50,5 +50,10 @@ class Game {
             }
         }
         return new_completion
+    }
+    
+    func mistake(tries: inout Int) -> String {
+        tries -= 1
+        return "h" + String(tries)
     }
 }
