@@ -24,12 +24,16 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureWord()
-        
+        startNewGame()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        startNewGame()
     }
     
     
     @IBAction func didCheck(_ sender: Any) {
+        view.endEditing(true)
         let text = checkTextfield(text: textfield.text)
         checkUserInput(input: text)
         print(game.wordCompletion)
@@ -38,6 +42,15 @@ class GameViewController: UIViewController {
 }
 
 extension GameViewController {
+    
+    func startNewGame() {
+        letterArray = []
+        wordArray = []
+        game = Game()
+        configureWord()
+        
+    }
+    
     private func checkUserInput(input: String) {
         let userInput = input
         guard userInput != "" else { return }

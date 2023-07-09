@@ -18,12 +18,16 @@ class FinishViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         configureScreen()
     }
     
     @IBAction func didDismiss(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func didConfirm(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        
     }
 }
 
@@ -42,4 +46,6 @@ extension FinishViewController {
             screenView.backgroundColor = .red
         }
     }
+    
+    
 }

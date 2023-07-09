@@ -10,7 +10,7 @@ import Foundation
 class Game {
     
     var words: [String] = ["plane", "dog", "building", "ocean", "mercury", "mountain", "space", "california", "laptop", "school", "cat"]
-    
+    //var words: [String] = ["cat", "dog", "bull"]
     var tries: Int = 6
     
     var chosenWord: String = "moon"
